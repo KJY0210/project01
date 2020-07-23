@@ -1,554 +1,621 @@
  <!DOCTYPE html>
  <html lang="ko">
-     <head>
-         <meta charset="UTF-8">
-         <title>A TWOSOME PLACE</title>
-         
-         <link href="css/style.css" rel="stylesheet" type="text/css">
-         <link rel="stylesheet" href="css/jquery.bxslider.css">
-         
-         <script src="js/jquery-3.1.1.min.js"></script>
-         <script src="js/jquery.bxslider.js"></script>
-         <script src="js/main.js"></script>
-         </head>
-     
-     <body>
-        <!-- Wrap 시작 -->
-        <div id="Wrap">
-            
-            <!-- Header 시작 -->
-            <div id="Header">
-                <div class="top_header">
-                    <div class="inner">
-                         <ul class="t_menu">
-                             <li><a href="#">로그인</a></li>
-                             <li><a href="#">회원가입</a></li>
-                             <li><a href="#">고객센터</a></li>
-                             <li><a href="#">뉴스및공지</a></li>
 
-                         </ul>
-                        <div class="space"></div>
-                         <div class="logo">
-                             <a href="index.html"><img src="img/logo_w.png" alt="로고"></a>
-                         </div>
-                         <div class="space"></div>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>A TWOSOME PLACE</title>
+    <!--[if lt IE 9]>
+          <script src="js/html5.js"></script>
+        <![endif]-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" >
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- Wrap 시작 -->
+    <div id="Wrap">
+
+        <!-- Header 시작 -->
+        <header id="Header">
+            <div class="top_header">
+                <div class="inner">
+                    <ul class="t_menu">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">뉴스및공지</a></li>
+
+                    </ul>
+                    <div class="space"></div>
+
+                    <!-- m_btn 시작 -->
+                    <div class="m_menu">
+                        <i>
+                            <a href="#" id="m_btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </i>
                     </div>
+                    <!-- m_btn 끝 -->
+
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo_w.png" alt="로고"></a>
+                    </div>
+                    <div class="space"></div>
                 </div>
-                
-                <div class="bottom_header">
-                    <div class="inner">
-                        <ul class="b_menu">
-                            <li>
-                                <a href="#">
-                                    <p>Brand Story</p>
-                                    <p>브랜드 스토리</p>
-                                </a>
-                                <ul class="submenu">
-                                    <li><a href="#">브랜드이야기</a></li>
-                                    <li><a href="#">커피이야기</a></li>
-                                    <li><a href="#">디저트이야기</a></li>
-                                    <li><a href="#">브랜드필름</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li>
-                                <a href="menu.html">
-                                    <p>Menu</p>
-                                    <p>매뉴</p>
-                                </a>
-                                <ul class="submenu">
-                                    <li><a href="menu.html">NEW</a></li>
-                                    <li><a href="menu.html">커피＆음료</a></li>
-                                    <li><a href="menu.html">디저트</a></li>
-                                    <li><a href="menu.html">델리</a></li>
-                                    <li><a href="menu.html">상품</a></li>
-                                    <li><a href="menu.html">홀케이크</a></li>
-                                    <li><a href="menu.html">영향성분표</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <p>Store</p>
-                                    <p>매장정보</p>
-                                </a>
-                                <ul class="submenu">
-                                    <li><a href="#">매장찾기</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <p>Event ＆ Joy</p>
-                                    <p>이벤트</p>
-                                </a>
-                                <ul class="submenu">
-                                    <li><a href="#">이벤트</a></li>
-                                    <li><a href="#">매장별 이벤트</a></li>
-                                    <li><a href="#">멤버십＆제휴카드</a></li>
-                                    <li><a href="#">케이크 클래스</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <p>Franchise</p>
-                                    <p>가맹정보</p>
-                                </a>
-                                <ul class="submenu">
-                                    <li><a href="#">창업정보 및 절차</a></li>
-                                    <li><a href="#">온라인창업상담</a></li>
-                                    <li><a href="#">정보공개서</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">가맹점 전용 금융상품</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <p>Business Fair</p>
-                                    <p>창업설명회</p>
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <p>Corporate Sales</p>
-                                    <p>기업 및 단체 구매 안내</p>
-                                </a>
-                            </li>
-                        </ul>
-                        
-                        
-                        <div class="m_menu">
-                            <i>
-                                <a href="#">
-                                    <img src="img/m_menu.png" alt="미니메뉴">
-                                </a>
-                            </i>
-                        </div>
-                        
-                        <div class="search">
-                            <i>
-                                <a href="#">
-                                    <img src="img/search.png" alt="검색">
-                                </a>
-                            </i>
-                        </div>
-                        <div class="space"></div>
-                        
-                        
-                        <div>
-                            
+            </div>
+
+            <div class="bottom_header">
+                <div class="inner">
+                    <ul class="b_menu">
+                        <li>
+                            <a href="brand.html">
+                                <p>Brand Story</p>
+                                <p>브랜드 스토리</p>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="brand.html">브랜드이야기</a></li>
+                                <li><a href="brand.html">커피이야기</a></li>
+                                <li><a href="brand.html">디저트이야기</a></li>
+                                <li><a href="brand.html">브랜드필름</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="menu.html">
+                                <p>Menu</p>
+                                <p>메뉴</p>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="menu.html">NEW</a></li>
+                                <li><a href="menu.html">커피＆음료</a></li>
+                                <li><a href="menu.html">디저트</a></li>
+                                <li><a href="menu.html">델리</a></li>
+                                <li><a href="menu.html">상품</a></li>
+                                <li><a href="menu.html">홀케이크</a></li>
+                                <li><a href="menu.html">영향성분표</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="store.html">
+                                <p>Store</p>
+                                <p>매장정보</p>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="store.html">매장찾기</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="event.html">
+                                <p>Event ＆ Joy</p>
+                                <p>이벤트</p>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="event.html">이벤트</a></li>
+                                <li><a href="event.html">매장별 이벤트</a></li>
+                                <li><a href="event.html">멤버십＆제휴카드</a></li>
+                                <li><a href="event.html">케이크 클래스</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <p>Franchise</p>
+                                <p>가맹정보</p>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">창업정보 및 절차</a></li>
+                                <li><a href="#">온라인창업상담</a></li>
+                                <li><a href="#">정보공개서</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">가맹점 전용 금융상품</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <p>Business Fair</p>
+                                <p>창업설명회</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <p>Corporate Sales</p>
+                                <p>기업 및 단체 구매 안내</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="space"></div>
+
+
+                    <div>
+
                         <ul class="b_menu_mo">
                             <li>
-                                <a href="#">브랜드 스토리</a>
+                                <a href="brand.html">브랜드 스토리</a>
                             </li>
-                            
+
                             <li>
-                                <a href="menu.html">매뉴</a>
+                                <a href="menu.html">메뉴</a>
                             </li>
-                            
+
                             <li>
-                                <a href="#">매장정보</a>
+                                <a href="store.html">매장정보</a>
                             </li>
-                            
+
                             <li>
-                                <a href="#">이벤트</a>
+                                <a href="event.html">이벤트</a>
                             </li>
-                            
+
                         </ul>
-                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Header 끝 -->
-            
-            <!-- Mainimg 시작 -->
-            <div id="Mainimg">
-               <div class="bxslider">
-                    <div class="inner">
-                       <div>
-                           <ul class="M_txt">
-                               <li>
-                                   <div></div>
-                                   <p>스트로베리 라떼</p>
-                                   <p><span>Strawberry Latte</span></p>
-                               </li>
-                               <li>
-                                   <div></div>
-                                   <p>스트로베리 요거 프라페</p>
-                                   <p><span>Strawberry Yogur Frappe</span></p>
-                               </li>
-                               <li>
-                                   <div></div>
-                                   <p>스트로베리 아보카도 라떼</p>
-                                   <p><span>Strawberry Avocado Latte</span></p>
-                               </li>
-                           </ul>
-                           <div class="space"></div>
-                           <div class="M_logo">
-                               <img src="img/logo_b.png">
-                           </div>
-                           <div class="M_bg0">
-                               <img src="img/mainimg_pc.jpg" alt="메인이미지">
-                           </div>
-                       </div>
-                       </div>
-                    <div class="inner">
-                           <div>
-                               <ul class="M_txt">
-                                   <li>
-                                       <div></div>
-                                       <p>스트로베리 라떼</p>
-                                       <p><span>Strawberry Latte</span></p>
-                                   </li>
-                                   <li>
-                                       <div></div>
-                                       <p>스트로베리 요거 프라페</p>
-                                       <p><span>Strawberry Yogur Frappe</span></p>
-                                   </li>
-                                   <li>
-                                       <div></div>
-                                       <p>스트로베리 아보카도 라떼</p>
-                                       <p><span>Strawberry Avocado Latte</span></p>
-                                   </li>
-                                   <div class="space"></div>
-                               </ul>
-                               <div class="M_logo">
-                                   <img src="img/logo_b.png">
-                               </div>
-                               <div class="M_bg0">
-                                   <img src="img/mainimg.jpg" alt="메인이미지">
-                               </div>
-                           </div>
-                       </div>
-                    <div class="inner">
-                           <div>
-                               <ul class="M_txt">
-                                   <li>
-                                       <div></div>
-                                       <p>스트로베리 라떼</p>
-                                       <p><span>Strawberry Latte</span></p>
-                                   </li>
-                                   <li>
-                                       <div></div>
-                                       <p>스트로베리 요거 프라페</p>
-                                       <p><span>Strawberry Yogur Frappe</span></p>
-                                   </li>
-                                   <li>
-                                       <div></div>
-                                       <p>스트로베리 아보카도 라떼</p>
-                                       <p><span>Strawberry Avocado Latte</span></p>
-                                   </li>
-                                   <div class="space"></div>
-                               </ul>
-                               <div class="M_logo">
-                                   <img src="img/logo_b.png">
-                               </div>
-                               <div class="M_bg0">
-                                   <img src="img/mainimg.jpg" alt="메인이미지">
-                               </div>
-                           </div>
-                       </div>
-               </div>
+        </header>
+        <!-- Header 끝 -->
+
+        <div class="btn_sub">
+            <ul id="submenu_all">
+                <li>
+                    <a class="pc_h" href="#">브랜드 스토리</a>
+                    <a href="#" class="sub_on"><span></span></a>
+                    <ul class="sub">
+                        <li><a href="brand.html">브랜드이야기</a></li>
+                        <li><a href="brand.html">커피이야기</a></li>
+                        <li><a href="brand.html">디저트이야기</a></li>
+                        <li><a href="brand.html">브랜드필름</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pc_h" href="#">메뉴</a>
+                    <a href="#" class="sub_on"><span></span></a>
+                    <ul class="sub">
+                        <li><a href="menu.html">NEW</a></li>
+                        <li><a href="menu.html">커피＆음료</a></li>
+                        <li><a href="menu.html">디저트</a></li>
+                        <li><a href="menu.html">델리</a></li>
+                        <li><a href="menu.html">상품</a></li>
+                        <li><a href="menu.html">홀케이크</a></li>
+                        <li><a href="menu.html">영향성분표</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pc_h" href="#">매장정보</a>
+                    <a href="#" class="sub_on"><span></span></a>
+                    <ul class="sub">
+                        <li><a href="#">매장찾기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pc_h" href="#">이벤트</a>
+                    <a href="#" class="sub_on"><span></span></a>
+                    <ul class="sub">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">매장별 이벤트</a></li>
+                        <li><a href="#">멤버십＆제휴카드</a></li>
+                        <li><a href="#">케이크 클래스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pc_h" href="#">가맹정보</a>
+                    <a href="#" class="sub_on"><span></span></a>
+                    <ul class="sub">
+                        <li><a href="#">창업정보 및 절차</a></li>
+                        <li><a href="#">온라인창업상담</a></li>
+                        <li><a href="#">정보공개서</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">가맹점 전용 금융상품</a>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pc_h" href="#">창업설명회</a>
+                    <a href="#" class="sub_on"><span></span></a>
+                    <ul class="sub">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pc_h" href="#">기업 및 단체 구매 안내</a>
+                    <a href="#" class="sub_on"><span></span></a>
+                    <ul class="sub">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Mainimg 시작 -->
+        <section id="Mainimg">
+            <div class="bxslider">
+                <div>
+                    <ul class="M_txt">
+                        <li>
+                            <div></div>
+                            <p>스트로베리 라떼</p>
+                            <p><span>Strawberry Latte</span></p>
+                        </li>
+                        <li>
+                            <div></div>
+                            <p>스트로베리 요거 프라페</p>
+                            <p><span>Strawberry Yogur Frappe</span></p>
+                        </li>
+                        <li>
+                            <div></div>
+                            <p>스트로베리 아보카도 라떼</p>
+                            <p><span>Strawberry Avocado Latte</span></p>
+                        </li>
+                    </ul>
+                    <div class="space"></div>
+                    <div class="M_bg0">
+                        <img src="img/mainimg_pc.jpg" alt="메인이미지">
+                    </div>
+                </div>
+                <div>
+                    <ul class="M_txt">
+                        <li>
+                            <div></div>
+                            <p>스트로베리 라떼</p>
+                            <p><span>Strawberry Latte</span></p>
+                        </li>
+                        <li>
+                            <div></div>
+                            <p>스트로베리 요거 프라페</p>
+                            <p><span>Strawberry Yogur Frappe</span></p>
+                        </li>
+                        <li>
+                            <div></div>
+                            <p>스트로베리 아보카도 라떼</p>
+                            <p><span>Strawberry Avocado Latte</span></p>
+                        </li>
+                        <div class="space"></div>
+                    </ul>
+                    <div class="M_bg0">
+                        <img src="img/mainimg_pc.jpg" alt="메인이미지">
+                    </div>
+                </div>
+                <div>
+                    <ul class="M_txt">
+                        <li>
+                            <div></div>
+                            <p>스트로베리 라떼</p>
+                            <p><span>Strawberry Latte</span></p>
+                        </li>
+                        <li>
+                            <div></div>
+                            <p>스트로베리 요거 프라페</p>
+                            <p><span>Strawberry Yogur Frappe</span></p>
+                        </li>
+                        <li>
+                            <div></div>
+                            <p>스트로베리 아보카도 라떼</p>
+                            <p><span>Strawberry Avocado Latte</span></p>
+                        </li>
+                        <div class="space"></div>
+                    </ul>
+                    <div class="M_bg0">
+                        <img src="img/mainimg_pc.jpg" alt="메인이미지">
+                    </div>
+                </div>
             </div>
-            <!-- Mainimg 끝 -->
-            
-            <!-- Contents 시작 -->
-            <div id="Contents">
-                <div class="rec">
-                    <div class="rec_title">
-                        <h2>Recommendation</h2>
-                    </div>
-                    
-                    <div class="rec_slider">
-                        <div class="l_btn">
-                            <img src="img/l_btn.png" alt="왼쪽">
-                        </div>
-                        
-                        <ul class="rec_list">
-                            <li class="slide">
-                                <img src="img/con1_1-1.png" alt="생딸기 가득 타르트">
-                            </li>
+        </section>
+        <!-- Mainimg 끝 -->
 
-                            <li class="slide">
-                                <img src="img/con1_2-2.png" alt="스트로베리 뉴욕 치즈">
-                            </li>
+        <!-- Contents 시작 -->
+        <section id="Contents">
 
-                            <li class="slide">
-                                <img src="img/con1_3-2.png" alt="스트로베리 라떼">
-                            </li>
-                            <li class="space"></li>
-                        </ul>
-                        
-                        <div class="r_btn">
-                            <img src="img/r_btn.png" alt="오른쪽">
-                        </div>
+            <div class="rec">
+                <div class="rec_title">
+                    <h2>Recommendation</h2>
+                </div>
+               
+                <div class="rec_slider">
+                    <div class="l_btn">
+                        <img src="img/l_btn.png" alt="왼쪽">
                     </div>
-                    
-                    <div class="rec_data">
-                        <div class="data_box">
+
+                    <ul class="rec_list">
+                        <li class="slide">
+                            <a ban_href="#panel1-1" class="on">
+                                <img src="img/slide1_on.png" alt="생딸기 가득 타르트">
+                            </a>
+                        </li>
+
+                        <li class="slide">
+                            <a ban_href="#panel1-2">
+                                <img src="img/slide2_off.png" alt="스트로베리 뉴욕 치즈">
+                            </a>
+                        </li>
+
+                        <li class="slide">
+                            <a ban_href="#panel1-3">
+                                <img src="img/slide3_off.png" alt="스트로베리 라떼">
+                            </a>
+                        </li>
+                        <li class="space"></li>
+                    </ul>
+
+                    <div class="r_btn">
+                        <img src="img/r_btn.png" alt="오른쪽">
+                    </div>
+                </div>
+
+                <div class="rec_data">
+                    <div class="panels">
+                        <div class="data_box" id="panel1-1">
                             <dl>
                                 <dt>생딸기 가득 타르트</dt>
                                 <dd>Strawberry Tart</dd>
                             </dl>
-                            
-                            <div></div>
-                            
+
                             <dl>
                                 <dd>
-                                    버터 풍미가 가득한 바삭한 타르트에 베리 무스와 화이트 시트를 레이어하고 신선한 딸기를 한가득<br>
-                                    올려 마무리한 무스 타르트<br>
+                                    버터 풍미가 가득한 바삭한 타르트에 베리 무스와 화이트 시트를 레이어하고 신선한 딸기를 한가득 올려 마무리한 무스 타르트<br>
                                     <br>
                                     <span>
-                                    * 계란, 우유, 대두, 밀, 돼지고기 함유
+                                        * 계란, 우유, 대두, 밀, 돼지고기 함유
                                     </span>
-                               </dd>
+                                </dd>
                             </dl>
                             <div class="space"></div>
                         </div>
-                        
-                        <a href="#">
-                           <div class="data_btn">
-                                <p>
-                                    Commet<br>
-                                    남기기
-                                </p>
-                            </div>
-                        </a>
-                        <div class="space"></div>
+
+                        <div class="data_box" id="panel1-2">
+                            <dl>
+                                <dt>스트로베리 뉴욕 치즈</dt>
+                                <dd>Strawberry Newyork Cheese Cake</dd>
+                            </dl>
+
+                            <dl>
+                                <dd>
+                                    부드럽고 촉촉한 식감과 진한 치즈의 향이 물씬 느껴지는 정통 뉴욕 스타일의 구움 치즈 케이크<br>
+                                    <br>
+                                    <span>
+                                        * 계란, 우유, 대두, 밀, 돼지고기 함유
+                                    </span>
+                                </dd>
+                            </dl>
+                            <div class="space"></div>
+                        </div>
+
+                        <div class="data_box" id="panel1-3">
+                            <dl>
+                                <dt>스트로베리 라떼</dt>
+                                <dd>Strawberry Latte</dd>
+                            </dl>
+
+                            <dl>
+                                <dd>
+                                    신선한 생딸기와 우유가 만나 달콤하게 즐기는 봄시즌 시그니처 음료<br>
+                                    <br>
+                                    <span>
+                                        * 계란, 우유, 대두, 밀, 돼지고기 함유
+                                    </span>
+                                </dd>
+                            </dl>
+                            <div class="space"></div>
+                        </div>
                     </div>
+
+                    <a href="#">
+                        <div class="data_btn">
+                            <p>
+                                Commet<br>
+                                남기기
+                            </p>
+                        </div>
+                    </a>
+                    <div class="space"></div>
                 </div>
-                
-                <div class="banner_set">
-                    <div class="inner">
-                        <div class="banner_l">
-                            <div class="flag">
-                                <h4>INVITE YOU THE CAKE TEACHING CLASS</h4>
-                            </div>
-                            <h1>투썸플레이서 케이크 교실로<br>
-                                여러분을 초대합니다!!</h1>
+            </div>
+
+            <div class="banner_set">
+                <div class="inner">
+                    <div class="banner_l">
+                        <div class="flag">
+                            <h4>INVITE YOU THE CAKE TEACHING CLASS</h4>
                         </div>
-                        
-                        <div class="banner_r">
-                            <img src="img/cake.png" alt="케이크">
-                        </div>
-                        <div class="space"></div>
+                        <h1>투썸플레이서 케이크 교실로<br>
+                            여러분을 초대합니다!!</h1>
                     </div>
+
+                    <div class="banner_r">
+                        <img src="img/cake.png" alt="케이크">
+                    </div>
+                    <div class="space"></div>
                 </div>
-                
-                <div class="menu_set">
-                    <h2>MENU</h2>
-                    <h3>커피＆음료</h3>
-                    <div class="menu_slider">
-                       <div id="banner_wrap">
-                           <ul id="slide_banner">
-                               <li class="list"><a href="#"><img src="img/menu1.png" alt="메뉴1"></a>
-                                   <h5>스트로베리 라떼</h5>
-                                   <p>
-                                       달콤한 스트로베리와 부드러운 우유가<br>
-                                       만나 조화롭게 섞인 투썸 스트로베리<br>
-                                       시즌 시그니처 음료
-                                   </p>
-                               </li>
-                               <li class="list"><a href="#"><img src="img/menu2.png" alt="메뉴2"></a>
-                                   <h5>스트로베리 아보카도 라떼</h5>
-                                   <p>
-                                       아보카도의 리치함과 고소함에 상큼한<br>
-                                       딸기가 더해진 건강한 스트로베리 음료
-                                   </p>
-                               </li>
-                               <li class="list"><a href="#"><img src="img/menu3.png" alt="메뉴3"></a>
-                                   <h5>스트로베리 요거 프라페</h5>
-                                   <p>
-                                       요거트가 들어간 달콤한 프라페에 아이<br>
-                                       스크림이 한 스쿱 올라간 모든 연령대가<br>
-                                       즐길 수 있는 음료
-                                   </p>
-                               </li>
-                               <li class="list"><a href="#"><img src="img/menu1.png" alt="메뉴1"></a>
-                                   <h5>스트로베리 라떼</h5>
-                                   <p>
-                                       달콤한 스트로베리와 부드러운 우유가<br>
-                                       만나 조화롭게 섞인 투썸 스트로베리<br>
-                                       시즌 시그니처 음료
-                                   </p>
-                               </li>
-                               <li class="list"><a href="#"><img src="img/menu2.png" alt="메뉴2"></a>
-                                   <h5>스트로베리 아보카도 라떼</h5>
-                                   <p>
-                                       아보카도의 리치함과 고소함에 상큼한<br>
-                                       딸기가 더해진 건강한 스트로베리 음료
-                                   </p>
-                               </li>
-                               <li class="list"><a href="#"><img src="img/menu3.png" alt="메뉴3"></a>
-                                   <h5>스트로베리 요거 프라페</h5>
-                                   <p>
-                                       요거트가 들어간 달콤한 프라페에 아이<br>
-                                       스크림이 한 스쿱 올라간 모든 연령대가<br>
-                                       즐길 수 있는 음료
-                                   </p>
-                               </li>
-                           </ul>
-                           <p><a href="#" id="prevBtn"><img src="img/menu_left.png" alt="이전버튼" /></a></p>
-                           <p><a href="#" id="nextBtn"><img src="img/menu_rigth.png" alt="다음버튼" /></a></p>
-                       </div>
-                       
-                       <!--
-                        <div class="l_btn">
-                            <a href="#"><img src="img/menu_left.png" alt="왼쪽 버튼"></a>
-                        </div>
-                        
-                        <div class="menu_list">
-                            <div class="list">
-                                <a href="#"><img src="img/menu1.png" alt="메뉴1"></a>
+            </div>
+
+            <div class="menu_set">
+                <h2>MENU</h2>
+                <h3>커피＆음료</h3>
+                <div class="menu_slider">
+                    <div id="banner_wrap">
+                        <ul id="slide_banner">
+                            <li class="list"><a href="#"><img src="img/menu1.png" alt="메뉴1"></a>
                                 <h5>스트로베리 라떼</h5>
                                 <p>
                                     달콤한 스트로베리와 부드러운 우유가<br>
                                     만나 조화롭게 섞인 투썸 스트로베리<br>
                                     시즌 시그니처 음료
                                 </p>
-                            </div>
-                             <div class="list">
-                                <a href="#"><img src="img/menu2.png" alt="메뉴2"></a>
+                            </li>
+                            <li class="list"><a href="#"><img src="img/menu2.png" alt="메뉴2"></a>
                                 <h5>스트로베리 아보카도 라떼</h5>
                                 <p>
-                                   아보카도의 리치함과 고소함에 상큼한<br>
-                                   딸기가 더해진 건강한 스트로베리 음료
+                                    아보카도의 리치함과 고소함에 상큼한<br>
+                                    딸기가 더해진 건강한 스트로베리 음료
                                 </p>
-                            </div>
-                             <div class="list">
-                                <a href="#"><img src="img/menu3.png" alt="메뉴3"></a>
+                            </li>
+                            <li class="list"><a href="#"><img src="img/menu3.png" alt="메뉴3"></a>
                                 <h5>스트로베리 요거 프라페</h5>
                                 <p>
-                                요거트가 들어간 달콤한 프라페에 아이<br>
-                                스크림이 한 스쿱 올라간 모든 연령대가<br>
-                                즐길 수 있는 음료
+                                    요거트가 들어간 달콤한 프라페에 아이<br>
+                                    스크림이 한 스쿱 올라간 모든 연령대가<br>
+                                    즐길 수 있는 음료
                                 </p>
-                            </div>
-                            <div class="space"></div>
-                        </div>
-                        
-                        <div class="r_btn">
-                            <a href="#"><img src="img/menu_rigth.png" alt="오른쪽 버튼"></a>
-                        </div>
-                        -->
+                            </li>
+                            <li class="list"><a href="#"><img src="img/menu1.png" alt="메뉴1"></a>
+                                <h5>스트로베리 라떼</h5>
+                                <p>
+                                    달콤한 스트로베리와 부드러운 우유가<br>
+                                    만나 조화롭게 섞인 투썸 스트로베리<br>
+                                    시즌 시그니처 음료
+                                </p>
+                            </li>
+                            <li class="list"><a href="#"><img src="img/menu2.png" alt="메뉴2"></a>
+                                <h5>스트로베리 아보카도 라떼</h5>
+                                <p>
+                                    아보카도의 리치함과 고소함에 상큼한<br>
+                                    딸기가 더해진 건강한 스트로베리 음료
+                                </p>
+                            </li>
+                            <li class="list"><a href="#"><img src="img/menu3.png" alt="메뉴3"></a>
+                                <h5>스트로베리 요거 프라페</h5>
+                                <p>
+                                    요거트가 들어간 달콤한 프라페에 아이<br>
+                                    스크림이 한 스쿱 올라간 모든 연령대가<br>
+                                    즐길 수 있는 음료
+                                </p>
+                            </li>
+                        </ul>
+                        <p><a href="#" id="prevBtn"><img src="img/l_btn2.png" alt="이전버튼" /></a></p>
+                        <p><a href="#" id="nextBtn"><img src="img/r_btn2.png" alt="다음버튼" /></a></p>
                     </div>
                 </div>
-                
-                <div class="icon_set">
-                    <div class="icon_logo">
-                        <img src="img/logo_b.png" alt="로고">
-                    </div>
-                    
-                    <ul class="top_icon">
-                        <li>
-                            <i><a href="#"><img src="img/icon1.png" alt="마이카드"></a></i>
-                            <p>마이카드</p>
-                        </li>
-                        <li>
-                            <i><a href="#"><img src="img/icon2.png" alt="투썸리워드"></a></i>
-                            <p>투썸리워드</p>
-                        </li>
-                        <li>
-                            <i><a href="#"><img src="img/icon3.png" alt="스탬프"></a></i>
-                            <p>스탬프</p>
-                        </li>
-                        <li>
-                            <i><a href="#"><img src="img/icon4.png" alt="쿠폰"></a></i>
-                            <p>쿠폰</p>
-                        </li>
-                        <div class="space"></div>
-                    </ul>
-                    
-                    <ul class="bottom_icon">
-                        <li>
-                            <i><a href="#"><img src="img/icon5.png" alt="매장"></a></i>
-                            <p>매장</p>
-                        </li>
-                        <li>
-                            <i><a href="#"><img src="img/icon6.png" alt="기프트카드"></a></i>
-                            <p>기프트카드</p>
-                        </li>
-                        <li>
-                            <i><a href="#"><img src="img/icon7.png" alt="이벤트"></a></i>
-                            <p>이벤트</p>
-                        </li>
-                        <li>
-                            <i><a href="#"><img src="img/icon8.png" alt="APP"></a></i>
-                            <p>투썸플레이스 APP</p>
-                        </li>
-                        <div class="space"></div>
-                    </ul>
-                </div>
-                
-                <div class="insta">
-                    <div class="inner">
-                       <div class="insta_txt">
-                           <p><i><img src="img/insta.png" alt="인스타"></i>Instagram</p>
-                       </div>
-                       <div class="insta_set">
-                           <div><a href="#"><img src="img/ad1.png" alt="광고1"></a></div>
-                           <div><a href="#"><img src="img/ad2.png" alt="광고2"></a></div>
-                           <div><a href="#"><img src="img/ad3.png" alt="광고3"></a></div>
-                           <div><a href="#"><img src="img/ad4.png" alt="광고4"></a></div>
-                           <div><a href="#"><img src="img/ad5.png" alt="광고5"></a></div>
-                           <div class="space"></div>
-                       </div>
-                    </div>
-                </div>
-                
             </div>
-            <!-- Contents 끝 -->
-            
-            <!-- Footer 시작 -->
-            <div id="Footer">
-               <div class="top_footer">
-                    <div class="inner">
+
+            <div class="icon_set">
+                <div class="icon_logo">
+                    <img src="img/logo_b.png" alt="로고">
+                </div>
+
+                <ul class="top_icon">
+                    <li>
+                        <i><a href="#"><img src="img/icon1.png" alt="마이카드"></a></i>
+                        <p>마이카드</p>
+                    </li>
+                    <li>
+                        <i><a href="#"><img src="img/icon2.png" alt="투썸리워드"></a></i>
+                        <p>투썸리워드</p>
+                    </li>
+                    <li>
+                        <i><a href="#"><img src="img/icon3.png" alt="스탬프"></a></i>
+                        <p>스탬프</p>
+                    </li>
+                    <li>
+                        <i><a href="#"><img src="img/icon4.png" alt="쿠폰"></a></i>
+                        <p>쿠폰</p>
+                    </li>
+                    <div class="space"></div>
+                </ul>
+
+                <ul class="bottom_icon">
+                    <li>
+                        <i><a href="#"><img src="img/icon5.png" alt="매장"></a></i>
+                        <p>매장</p>
+                    </li>
+                    <li>
+                        <i><a href="#"><img src="img/icon6.png" alt="기프트카드"></a></i>
+                        <p>기프트카드</p>
+                    </li>
+                    <li>
+                        <i><a href="#"><img src="img/icon7.png" alt="이벤트"></a></i>
+                        <p>이벤트</p>
+                    </li>
+                    <li>
+                        <i><a href="#"><img src="img/icon8.png" alt="APP"></a></i>
+                        <p>투썸플레이스 APP</p>
+                    </li>
+                    <div class="space"></div>
+                </ul>
+            </div>
+
+            <div class="insta">
+                <div class="inner">
+                    <div class="insta_txt">
+                        <p><i><img src="img/insta.png" alt="인스타"></i>Instagram</p>
+                    </div>
+                    <div class="insta_set">
+                        <div><a b_href="#"><img src="img/ad1.png" alt="광고1"></a></div>
+                        <div><a b_href="#"><img src="img/ad2.png" alt="광고2"></a></div>
+                        <div><a b_href="#"><img src="img/ad3.png" alt="광고3"></a></div>
+                        <div><a href="#"><img src="img/ad4.png" alt="광고4"></a></div>
+                        <div><a href="#"><img src="img/ad5.png" alt="광고5"></a></div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Contents 끝 -->
+
+        <!-- Footer 시작 -->
+        <footer id="Footer">
+            <div class="top_footer">
+                <div class="inner">
+                    <ul>
+                        <li>사이트맵</li>
+                        <li>리쿠르트</li>
+                        <li>이용약관</li>
+                        <li>개인정보처리방침</li>
+                        <li>이메일무단수집거부</li>
+                        <li>법적고지</li>
+                        <div class="space"></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom_footer">
+                <div class="inner">
+                    <div class="F_logo">
+                        <img src="img/logo_g.png" alt="하단로고">
+                    </div>
+
+                    <div class="copy_T">
                         <ul>
-                            <li>사이트맵</li>
-                            <li>리쿠르트</li>
-                            <li>이용약관</li>
-                            <li>개인정보처리방침</li>
-                            <li>이메일무단수집거부</li>
-                            <li>법적고지</li>
+                            <li>
+                                <span>주소</span>서울시 중구 을지로 170
+                            </li>
+                            <li>
+                                <span>대표자</span>이영상
+                            </li>
+                            <li>
+                                <span>사업자등록번호</span>404-86-01054
+                            </li>
+                            <li>
+                                <span>개인정보보호책임자</span>장재호
+                            </li>
+                            <li>
+                                <span>통신판매업종신고증</span>제2018-서울중구-0533호
+                            </li>
+                            <li>
+                                <span>대표이메일</span>twosomemaster@cj.net
+                            </li>
                             <div class="space"></div>
                         </ul>
+                        <p> Copyright ©2020 A TWOSOME PPLACE CO. LTD. ALL RIGHTS
+
+                            RESERVED.</p>
                     </div>
-                </div>
-                
-                <div class="bottom_footer">
-                    <div class="inner">
-                       <div class="F_logo">
-                           <img src="img/logo_g.png" alt="하단로고">
-                       </div>
-                       
-                       <div class="copy_T">
-                            <ul>
-                                <li>
-                                    <span>주소</span>서울시 중구 을지로 170
-                                </li>
-                                <li>
-                                    <span>대표자</span>이영상
-                                </li>
-                                <li>
-                                    <span>사업자등록번호</span>404-86-01054
-                                </li>
-                                <li>
-                                    <span>개인정보보호책임자</span>장재호
-                                </li>
-                                <li>
-                                    <span>통신판매업종신고증</span>제2018-서울중구-0533호
-                                </li>
-                                <li>
-                                    <span>대표이메일</span>twosomemaster@cj.net
-                                </li>
-                                <div class="space"></div>
-                            </ul>
-                            <p> Copyright ©2020 A TWOSOME PPLACE CO. LTD. ALL RIGHTS RESERVED.</p>
-                        </div>
-                        <div class="info">
+
+                    <div class="copy_T_mo">
+
+                        <div class="info_mo">
                             <ul>
                                 <li>
                                     <span>고객센터</span> 1877-8000
@@ -559,13 +626,54 @@
                                 <div class="space"></div>
                             </ul>
                         </div>
+
+                        <ul>
+                            <li>
+                                <span>주소</span>서울시 중구 을지로 170
+                            </li>
+                            <li>
+                                <span>대표자</span>이영상
+                            </li>
+                            <li>
+                                <span>사업자등록번호</span>404-86-01054
+                            </li>
+                            <li>
+                                <span>개인정보보호책임자</span>장재호
+                            </li>
+                            <li>
+                                <span>통신판매업종신고증</span>제2018-서울중구-0533호
+                            </li>
+                            <li>
+                                <span>대표이메일</span>twosomemaster@cj.net
+                            </li>
+                            <div class="space"></div>
+                        </ul>
+
+                        <div class="F_logo_mo">
+                            <img src="img/logo_g.png" alt="하단로고">
+                        </div>
+                        <p> Copyright ©2020 A TWOSOME PPLACE CO. LTD. ALL RIGHTS
+
+                            RESERVED.</p>
+                    </div>
+
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <span>고객센터</span> 1877-8000
+                            </li>
+                            <li>
+                                <span>FAX</span>02-2058-6777
+                            </li>
+                            <div class="space"></div>
+                        </ul>
                     </div>
                 </div>
-                
             </div>
-            <!-- Footer 끝 -->
-            
-        </div>
-        <!-- Wrap 끝 -->
-     </body>
- </html>
+
+        </footer>
+        <!-- Footer 끝 -->
+
+    </div>
+    <!-- Wrap 끝 -->
+</body></html>

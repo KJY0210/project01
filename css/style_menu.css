@@ -17,7 +17,10 @@
     position: relative;
     width: 100%;
     height: 378px;
-    background-color: #000;
+    background-image: url(../img/M_mainimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
 
 #Menu_Mainimg > div:nth-child(2) {
@@ -35,82 +38,81 @@
     z-index: 1;
 }
 
-#Menu_Mainimg > .inner  h1 {
+#Menu_Mainimg > .inner > h1 {
     padding-top: 116px;
     padding-left: 358px;
     font-family: NotoSansCJKkr-Bold;
 }
 
-#Menu_Mainimg > .inner  h3 {
+#Menu_Mainimg > .inner > h3 {
     padding-left: 390px;
 }
 
-.tabSet {
-    margin-bottom: 30px;
+.tabSet{
+	margin-bottom:30px;
 }
 
-.tabSet ul {
+.tabSet ul{
     position: absolute;
     margin: 0 auto;
     top: 266px;
-    left: 25.5%;
-    width: 605px;
+    left: 20.5%;
+    width: 758px;
     height: 80px;
 }
-
-.tabSet ul li {
-    float: left;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 1em;
-    border: 1px solid #fff;
-    background-color: rgba(57, 60, 61, 0.7);
-    font-family: NotoSansCJKkr-Light;
-}
-
-.tabSet ul li a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 14px;
-    text-decoration: none;
-}
+	.tabSet ul li{
+        float: left;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 1em;
+        border: 1px solid #fff;
+        background-color: rgba(57, 60, 61, 0.7);
+        font-family: NotoSansCJKkr-Light;
+	}
+		.tabSet ul li a{
+			color:#fff;
+			font-weight:bold;
+			font-size:14px;
+			text-decoration:none;
+		}
 
 
-.tabSet ul li:nth-child(1),
-.tabSet ul li:nth-child(2),
-.tabSet ul li:nth-child(3) {
-    border-right: none;
-}
+        .tabSet ul li:nth-child(1),
+        .tabSet ul li:nth-child(2),
+        .tabSet ul li:nth-child(3),
+        .tabSet ul li:nth-child(4) {
+            border-right: none;
+        }
 
-.tabSet ul li:hover {
-    cursor: pointer;
-}
+		.tabSet ul li:hover{
+            cursor: pointer;
+		}
 
-.tabSet ul li a.on {
-    display: block !important;
-    position: relative;
-    background: #a70a0e;
-}
+		.tabSet ul li a.on{
+            display:  block !important;
+            position: relative;
+			background:#a70a0e;
+		}
 
-.tabSet ul li a.on:after {
-    position: absolute;
-    content: "";
-    bottom: -9px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 10px solid #a70a0e;
-    margin-left: -8px;
-}
+        .tabSet ul li a.on:after {
+            position: absolute;
+            content: "";
+            bottom: -9px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid #a70a0e;
+            margin-left: -8px;
+        }
 
 
-.tabSet ul li a.on:hover {
-    text-decoration: none;
-}
+		.tabSet ul li a.on:hover{
+			text-decoration:none;
+		}
 
 .menubar .m_bar:after {
     content: '';
@@ -127,7 +129,10 @@
         top: 48px;
         width: 100%;
         height: 378px;
-        background-color: #000;
+        background-image: url(../img/M_mainimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -900px top;
     }
 
     #Menu_Mainimg > div:nth-child(2) {
@@ -178,19 +183,12 @@
         font-family: NotoSansCJKkr-Light;
     }
 
-    .tabSet ul li:nth-child(1),
-    .tabSet ul li:nth-child(2),
-    .tabSet ul li:nth-child(3),
-    .tabSet ul li:nth-child(4) {
-        border-right: none;
-    }
-
     .tabSet ul li:nth-child(3),
     .tabSet ul li:nth-child(4) {
         border-top: none;
         border-bottom: none;
     }
-
+    
     .tabSet ul li:nth-child(5) {
         width: 100%;
     }
@@ -199,7 +197,7 @@
         position: relative;
         background-color: #a70a0e;
     }
-
+    
     .tabSet ul li a.on:after {
         display: none;
         position: absolute;
@@ -216,10 +214,10 @@
 
     .mi {
         width: 100%;
-        height: 525px;
+        height: 575px;
         background-color: #000;
     }
-
+    
 }
 
 /*******************************/
@@ -260,14 +258,17 @@
 .menu_title {
     margin: 0 auto;
     padding-top: 70px;
-    width: 100%;
+    width: 335px;
     text-align: center;
     font-size: 38px;
 }
 
-.menu_title_txt  > p {
-    margin-bottom: 20px;
-    font-size: 12px;
+.menu_title_txt > div {
+    float: left;
+}
+
+.menu_title_txt > div > p {
+    font-size: 12px; 
     color: #777;
 }
 
@@ -310,7 +311,7 @@
     .menu_title {
         margin: 0 auto;
         padding-top: 23px;
-        width: 100%;
+        width: 335px;
         text-align: center;
         font-size: 1.7em;
     }
@@ -451,7 +452,7 @@
     .m_bar > li:nth-child(3) {
         border-right: none;
     }
-
+    
     .m_bar > li:nth-child(1) {
         background-color: #a70a0e;
         position: relative;
@@ -504,12 +505,12 @@
 
 /***************************/
 
-.panel {
+.panel{
     display: none;
 }
 
 .panel > p {
-    margin: 300px 0;
+    margin: 300px 0  ;
     width: 100%;
     text-align: center;
     font-size: 1.5em;
@@ -549,11 +550,11 @@
     content: '';
     display: block;
     position: absolute;
-    top: 0;
+    top:0;
     left: 3%;
     width: 300px;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
     z-index: 9999;
     cursor: pointer;
 }
@@ -565,7 +566,7 @@
 .whole:hover .comment {
     display: block;
     position: absolute;
-    top: 0;
+    top:0;
     left: 3%;
     margin-top: 41%;
     margin-left: 18%;
@@ -644,19 +645,19 @@
         content: '';
         display: block;
         position: absolute;
-        top: 0;
+        top:0;
         left: 0;
         width: 100%;
         height: 90%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0,0,0,0.7);
         z-index: 9999;
         cursor: pointer;
     }
-
+    
     .whole:hover .comment {
         display: block;
         position: absolute;
-        top: 0;
+        top:0;
         left: 3%;
         margin-top: 41%;
         margin-left: 18%;
@@ -668,7 +669,7 @@
         z-index: 9999;
         cursor: pointer;
     }
-
+    
     .whole img {
         margin-bottom: 20px;
         width: 100%;

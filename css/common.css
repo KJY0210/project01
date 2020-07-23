@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*googleips 웹폰트 css 파일 불러오기*/
-@import url(https://fonts.googleapis.com/css?family=Galada|Nanum+Gothic|Nanum+Myeongjo);
+/*@import url(https://fonts.googleapis.com/css?family=Galada|Nanum+Gothic|Nanum+Myeongjo);*/
 /*font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Nanum Myeongjo', serif;
 font-family: 'Galada', cursive; */
@@ -13,7 +13,7 @@ font-family: 'Galada', cursive; */
 /* @font-face { font-family : font_gothic;    
                 src : url(http://uhbee.com/nanum.eot) ; }   */
 
-
+/*
 * {margin:0; padding:0;}
 body{ font-size:16px;
       color:#6f6f6f;
@@ -29,13 +29,643 @@ input, textarea {color:inherit;font-size:inherit;
        vertical-align: middle}
 button{outline:0}
 
+*/
+
+
+@font-face {
+    font-family: 'NotoSansCJKkr-Black';
+    src: url(fonts/NotoSansCJKkr-Black.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'NotoSansCJKkr-Bold';
+    src: url(fonts/NotoSansCJKkr-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'NotoSansCJKkr-Light';
+    src: url(fonts/NotoSansCJKkr-Light.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'NotoSansCJKkr-DemiLight';
+    src: url(fonts/NotoSansCJKkr-DemiLight.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'NotoSansCJKkr-Medium';
+    src: url(fonts/NotoSansCJKkr-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'NotoSansCJKkr-Regular';
+    src: url(fonts/NotoSansCJKkr-Regular.otf) format("opentype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    overflow-x: hidden;
+    font-family: NotoSansCJKkr-Medium;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner {
+    margin: 0 auto;
+    max-width: 1290px;
+}
+
+.space {
+    clear: both !important;
+}
 
 
 
 
+/*********************************************************************/
 
 
 
+/******************** Header ********************/
 
+.top_header {
+    width: 100%;
+    height: 96px;
+    background-color: #a70a0e;
+}
+
+.t_menu {
+    float: right;
+    padding-top: 17px;
+}
+
+.t_menu > li {
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.t_menu > li > a {
+    color: #D8C2AC;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 161px;
+    height: 36px;
+}
+
+.logo img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom_header {
+    width: 100%;
+    height: 60px;
+    background-color: #393C3D;
+}
+
+.b_menu {
+    float: left;
+    width: 100%;
+}
+
+.b_menu a {
+    color: #C2BDBD;
+    transition: all 0.5s;
+}
+
+.b_menu > li {
+    position: relative;
+    float: left;
+    width: 13.2%;
+    height: 60px;
+    line-height: 43px;
+    font-size: 17px;
+    text-align: center;
+    color: #C2BDBD;
+    background-color: #393C3D;
+    z-index: 2;
+}
+
+.b_menu > li:nth-child(2) {
+    background-color: #a70a0e;
+}
+
+.b_menu li > a > p:nth-child(2) {
+    line-height: 0;
+    font-size: 7px;
+}
+.b_menu a:hover{
+    color: #fff;
+}
+
+.b_menu > li:hover{
+    background-color: #222;
+}
+.b_menu > li:nth-child(2):hover{
+    background-color: #a70a0e;
+}
+
+.b_menu > li:hover .submenu {
+    opacity: 1;
+}
+.b_menu > li a:focus{
+    color: #fff;
+}
+
+.b_menu_mo {
+    display: none;
+}
+
+.submenu {
+    position: absolute;
+    display: block;
+    top: 60px;
+    text-align: center;
+    background-color:  #393C3D;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index:100;
+}
+
+.submenu > li {
+    padding: 6px 0;
+    width: 170.5px;
+    transition: all 0.5s;
+}
+/*
+.submenu > li:hover {
+    background-color: #222;
+}*/
+
+.submenu > li > a {
+    font-size: 13px;
+    color: #C2BDBD;
+}
+
+#m_btn {
+    display: none;
+    position: relative;
+    top: 17px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+}
+
+#m_btn > span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #D8C2AC;
+    transition: 0.5s all;
+}
+
+#m_btn > span:first-child {
+    top: 0;
+}
+
+#m_btn > span:nth-child(2) {
+    top: 10px;
+}
+
+#m_btn > span:last-child {
+    top: 20px;
+}
+
+/* 네비on 상태일 때 디자인 */
+
+#m_btn.on > span:first-child {
+    top: 10px;
+    transform: rotate(45deg);
+}
+
+#m_btn.on > span:nth-child(2) {
+    top: 10px;
+    transform: rotateY(90deg);
+}
+
+#m_btn.on > span:last-child {
+    top: 10px;
+    transform: rotate(-45deg);
+}
+
+
+.btn_sub, .sub.on, .pc_h {
+    display: none;
+    transition: all 0.5s;
+}
+
+#submenu_all {
+    position: absolute;
+    top: 156px;
+    left: 0;
+    padding: 0 0 0 18%;
+    width: 100%;
+    height: 300px;
+    background: #393C3D;
+    z-index: 100;
+}
+
+#submenu_all > li {
+    display: list-item;
+    float: left;
+    margin: 0 16px 18px;
+    width: calc(13% - 30px);
+    line-height: 1em;
+    text-align: left;
+}
+
+#submenu_all > li > a {
+    padding-bottom: 7px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #C2BDBD;
+}
+
+#submenu_all > li > ul {
+    margin-top: 0;
+    line-height: 2.5rem;
+    text-align: left;
+    font-size: .8em;
+    border-top: 2px solid #a70a0e;
+}
+
+#submenu_all > li > ul > li a {
+    color: #fff;
+}
+
+
+
+    @media all and (max-width:736px) {
+
+        #Header .inner {
+            width: 100%;
+        }
+        
+        .top_header {
+            /*width: 100%;*/
+            height: auto;
+            background-color: #a70a0e;
+        }
+        
+        .t_menu {
+            display: none;
+            /*float: right;
+            padding-top: 17px;*/
+        }
+        
+        .logo {
+            margin: 0 auto;
+            padding: 20px 0;
+            width: 161px;
+            height: 36px;
+        }
+
+        .logo img {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .bottom_header {
+            width: 100%;
+            height: auto;
+            background-color: #393C3D;
+        }
+
+        .b_menu {
+            display: none;
+            float: left;
+            width: 100%;
+        }
+
+        .b_menu_mo {
+            display: block;
+        }
+        
+        .b_menu_mo {
+            float: left;
+            width: 100%;
+        }
+
+
+        .b_menu_mo > li a {
+            position: relative;
+            float: left;
+            margin: 0 auto;
+            width: 25%;
+            line-height: 3.75em;
+            font-size: .8em;
+            text-align: center;
+            color: #C2BDBD;
+            background-color: #393C3D;
+            z-index: 2;
+        }   
+
+        .b_menu_mo > li:nth-child(2) a {
+            background-color: #a70a0e;
+        }    
+        #m_btn {
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 25px;
+            height: 25px;
+            z-index: 10;
+        }
+        
+        /* submenu */
+        #submenu_all {
+            position: absolute;
+            top: 75px;
+            left: 0;
+            padding: 5% 10%;
+            width: 80%;
+            height: auto;
+            background: #393C3D;
+            z-index: 10000;
+        }
+
+        #submenu_all > li {
+            display: list-item;
+            float: none;
+            margin: 0;
+            width: 100%;
+            line-height: 1em;
+            text-align: left;
+        }
+
+
+        #submenu_all > li > a {
+            clear: both;
+            padding: 30px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 1em;
+            text-decoration: none;
+        }
+
+        #submenu_all > li > ul {
+            margin-top: 0;
+            padding-top: 10px;
+            line-height: 2.5rem;
+            text-align: center;
+            font-size: .8em;
+            color: #C2BDBD;
+            border-top: 2px solid #a70a0e;
+        }
+        #submenu_all > li > ul > li {
+            float: left;
+            width: 50%;
+        }
+
+        .sub.on {
+            display: none;
+        }
+
+        .pc_h {
+            display: block;
+        }
+
+    }
+
+
+/******************** Footer ********************/
+
+#Footer {
+    width: 100%;
+    height: 500px;
+    background-color: #2C2A29;
+}
+
+.top_footer:after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #555;
+}
+
+.top_footer > .inner > ul > li {
+    float: left;
+    padding: 30px 30px;
+    font-size: 12px;
+    color: #737373;
+}
+
+.top_footer > .inner > ul > li:nth-child(1) {
+    padding-left: 0px;
+    ;
+}
+
+.top_footer > .inner > ul > li:nth-child(4) {
+    color: #fff;
+}
+
+.bottom_footer {
+    width: 100%;
+    height: auto;
+}
+
+.F_logo {
+    float: left;
+    padding-top: 35px;
+    width: 155px;
+
+}
+
+.F_logo > img {
+    float: left;
+    width: 100%;
+
+}
+
+.copy_T {
+    float: left;
+    padding: 40px 0 0 20px;
+}
+
+.copy_T > p {
+    padding-top: 35px;
+    color: #999;
+    font-size: 9px;
+}
+
+.copy_T > ul > li {
+    position: relative;
+    padding-left: 120px;
+    font-size: 11px;
+    color: #949293;
+}
+
+.copy_T > ul > li > span {
+    position: absolute;
+    left: 0;
+    color: #5f5e63;
+}
+
+.info {
+    float: right;
+    font-size: 17px;
+    color: #A5080C;
+}
+
+
+.info > ul > li {
+    float: left;
+    margin-right: 10px;
+    padding-top: 37px;
+}
+
+.info > ul > li > span {
+    margin-right: 10px;
+    font-size: 11px;
+    color: #5f5e63;
+}
+
+.F_logo_mo, .copy_T_mo, .info_mo {
+    display: none;
+}
+
+    @media all and (max-width:736px) {
+
+        #Footer {
+            width: 100%;
+            height: auto;
+            background-color: #2C2A29;
+        }
+
+        .top_footer .inner {
+            margin: 0 auto;
+            width: 90%;
+        }
+        
+        .top_footer:after {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #555;
+        }
+
+        .top_footer > .inner > ul {
+            margin: 0 auto;
+            padding-top: 10px;
+            width: 100%;
+            
+        }
+        
+        .top_footer > .inner > ul > li {
+            float: left;
+            margin: 0 auto;
+            width: 19%;
+            padding: 10px;
+            text-align: center;
+            font-size: .65em;
+            color: #737373;
+        }
+        
+        .top_footer > .inner > ul > li:nth-child(4):after {
+            float: none;
+        }
+        
+        .top_footer > .inner > ul > li:nth-child(5),
+        .top_footer > .inner > ul > li:nth-child(6) {
+            margin: 0 auto;
+            width: 43%;
+        }
+
+        .top_footer > .inner > ul > li:nth-child(1) {
+            padding-left: 10px;
+        }
+
+        .F_logo, .copy_T, .info {
+            display: none;
+            /*float: left;
+            padding: 40px 0 0 20px;*/
+        }
+        
+        .info_mo {
+            float: none;
+            margin:  0 auto;
+            padding-bottom: 5px;
+            width: 66%;
+            font-size: .8em;
+            color: #A5080C;
+            text-align: center;
+        }
+
+
+        .info_mo > ul > li {
+            float: left;
+            margin-right: 10px;
+            padding-top: 0;
+        }
+
+        .info_mo > ul > li > span {
+            margin-right: 10px;
+            font-size: .8em;
+            color: #5f5e63;
+        }
+
+        .copy_T_mo > p {
+            padding: 35px 0;
+            color: #999;
+            font-size: .4em;
+            text-align: center;
+        }
+
+        .copy_T_mo > ul {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+        }
+        
+        .copy_T_mo > ul > li {
+            float: left;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: .8em;
+            color: #949293;
+        }
+
+        .copy_T_mo > ul > li > span {
+            padding-right: 10px;
+            color: #5f5e63;
+        }
+        
+        .F_logo_mo {
+            margin: 0 auto;
+            padding-top: 20px;
+            width: 155px;
+        }
+
+        .F_logo_mo > img {
+            width: 100%;
+        }
+        
+        .F_logo_mo, .copy_T_mo, .info_mo {
+            display: block;
+        }
+    }
 
 
